@@ -36,7 +36,23 @@ ul {
 
 .container {
   margin: 0 auto;
-  width: 1040px;
+  width: 1160px;
+  position: relative;
+}
+
+.main-header::before {
+  content: "";
+  background-color: #f7e296;
+  width: 1165px;
+  height: 300px;
+  position: absolute;
+}
+
+.main-header_background-block {
+  position: relative;
+  margin-left: 45px;
+  margin-right: 15px;
+  margin-top: -20px;
 }
 
 .main-header {
@@ -45,7 +61,7 @@ ul {
   flex-direction: column;
 }
 
-.line-menu {
+.main-header_block {
   display: flex;
   flex-direction: row;
   margin-top: 15px;
@@ -54,38 +70,38 @@ ul {
 
 input[name="text-search"]{
   border: none;
+  background-color: transparent;
 }
 
-.button-search {
+.main-header_block_button-search {
   border: none;
   background-color: white;
   display: none;
 }
 
-.line-menu__link {
+.main-header_block_link {
   margin: 0;
   display: flex;
   flex-direction: row;
 }
 
-.line-menu__link li:nth-child(1) {
+.main-header_block_link li:nth-child(1) {
   margin-left: 390px;
 }
 
-.line-menu__link li:nth-child(2) {
+.main-header_block_link li:nth-child(2) {
   margin-left: 170px;
 }
 
-.line-menu__link li:nth-child(3) {
+.main-header_block_link li:nth-child(3) {
   margin-left: 40px;
 }
 
-.line-menu__link_navigation img {
+.main-header_block_link_indent img {
   margin-right: 5px;
 }
 
-
-.text-caps-bold {
+.line-menu_link__caps-bold {
   font-family: "Gilroy", sans-serif;
   color: #000;
   font-size: 17px;
@@ -93,20 +109,45 @@ input[name="text-search"]{
   text-transform: uppercase;
 }
 
-.line-menu__link-contact_button {
+.line-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.line-menu_link-contact_button {
   border: none;
   background-color: white;
   opacity: 0.3;
+  background-color: transparent;
 }
 
-.line-menu__link-contact:nth-child(2) {
+.line-menu_link-contact:nth-child(2) {
   margin-left: 390px;
 }
 
-.line-menu__link-contact:nth-child(3) {
+.line-menu_link-contact:nth-child(3) {
   margin-left: 40px;
 }
 
-.line-menu__link-contact:nth-child(4) {
-  margin-left: 130px;
+.line-menu_link-contact:nth-child(4) {
+  margin-left: 160px;
+}
+
+.popup-contener {
+  display: flex;
+  flex-direction: row;
+}
+
+.popup-contener_column_list2,
+.popup-contener_column_list3 {
+  margin-left: 80px;
+}
+
+.white-block {
+  position: absolute;
+  top: 220px;
+  left: 580px;
+  width: 100px;
+  height: 8px;
+  background-color: white;
 }
